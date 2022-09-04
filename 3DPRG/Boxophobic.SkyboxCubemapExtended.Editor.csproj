@@ -47,9 +47,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Editor\SkyboxExtendedWindows.cs" />
-     <Compile Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Editor\SkyboxExtendedShaderGUI.cs" />
      <Compile Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Editor\SkyboxExtendedHub.cs" />
+     <Compile Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Editor\SkyboxExtendedShaderGUI.cs" />
+     <Compile Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Editor\SkyboxExtendedWindows.cs" />
      <None Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Editor\Boxophobic.SkyboxCubemapExtended.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>D:/unity hub/2020.3.25f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
