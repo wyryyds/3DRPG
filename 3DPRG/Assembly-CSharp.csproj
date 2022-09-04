@@ -56,9 +56,10 @@
     <Compile Include="Assets\FlyWeightPattern\SceneObjectGroup.cs" />
     <Compile Include="Assets\FlyWeightPattern\FlyWeightInstanceGeneration.cs" />
     <Compile Include="Assets\FlyWeightPattern\FlyWeightSceneSaverEditor.cs" />
+    <Compile Include="Assets\Scripts\Mgrs\MouseManager.cs" />
     <Compile Include="Assets\FlyWeightPattern\FlyWeightSceneSaver.cs" />
     <Compile Include="Assets\FlyWeightPattern\Matrix.cs" />
-    <Compile Include="Assets\Scripts\MouseManager.cs" />
+    <Compile Include="Assets\Scripts\Characters\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
