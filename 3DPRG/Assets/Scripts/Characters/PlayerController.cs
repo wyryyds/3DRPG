@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,11 @@ public class PlayerController : MonoBehaviour
 {
     private NavMeshAgent agent;
     private Animator animator;
+    private GameObject attackTarget;
+    private float attackTime;
 
-    private static readonly int speedId=Animator.StringToHash("Speed");
+    private static readonly int speedString=Animator.StringToHash("Speed");
+    private static readonly int attackSting = Animator.StringToHash("Attack");
 
     private void Awake()
     {
@@ -18,19 +22,48 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        MouseManager.Instance.onmouseclicked += MoveToTarget;
+        MouseManager.Instance.onMouseClicked += MoveToTarget;
+        MouseManager.Instance.onEnemyClicked += EventAttack;
     }
+
     private void Update()
     {
         SwitchAnimations();
+        attackTime -= Time.deltaTime;
     }
     public void MoveToTarget(Vector3 target)
     {
+        StopAllCoroutines();
+        agent.isStopped = false;
         agent.destination = target;
     }
 
     private void SwitchAnimations()
     {
-        animator.SetFloat(speedId, agent.velocity.sqrMagnitude);
+        animator.SetFloat(speedString, agent.velocity.sqrMagnitude);
     }
+    private void EventAttack(GameObject targetEnemy)
+    {
+        if (targetEnemy == null) return;
+        attackTarget = targetEnemy;
+        StartCoroutine(MoveToAttackTarget());
+    }
+
+    IEnumerator MoveToAttackTarget()
+    {
+        agent.isStopped = false;
+        transform.LookAt(attackTarget.transform);
+        while(Vector3.Distance(attackTarget.transform.position,transform.position)>1)
+        {
+            agent.destination = attackTarget.transform.position;
+            yield return null;
+        }
+        agent.isStopped = true;
+        if(attackTime<0)
+        {
+            animator.SetTrigger(attackSting);
+            attackTime = 0.5f;
+        }
+    }
+
 }
