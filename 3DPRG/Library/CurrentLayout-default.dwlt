@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 281}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 41
+  controlID: 18
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,10 +172,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 708, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 40
+  controlID: 17
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 56
+  controlID: 62
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -302,8 +302,8 @@ MonoBehaviour:
     y: 0
     width: 552
     height: 1307
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -877,6 +877,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   brushSettingsAsset: {fileID: 11400000, guid: 72d43bd16da595d42af6960cab0f65b5, type: 2}
 --- !u!114 &18
 MonoBehaviour:
@@ -905,7 +906,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -25682
+  m_LastSelectedObjectID: 21534
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1031,9 +1032,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -10.930861, y: -1.5830989, z: -12.496691}
+    m_Target: {x: 0.8101635, y: 0.9953834, z: 0.35489178}
     speed: 2
-    m_Value: {x: -10.930861, y: -1.5830989, z: -12.496691}
+    m_Value: {x: 0.8101635, y: 0.9953834, z: 0.35489178}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1080,13 +1081,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.10303279, y: -0.89081544, z: 0.36337563, w: 0.2525849}
+    m_Target: {x: 0.004732656, y: -0.99080914, z: 0.13035166, w: 0.035973698}
     speed: 2
-    m_Value: {x: 0.103032336, y: -0.8908115, z: 0.36337402, w: 0.2525838}
+    m_Value: {x: 0.00473263, y: -0.99080384, z: 0.13035096, w: 0.035973504}
   m_Size:
-    m_Target: 3.1904519
+    m_Target: 1.6432567
     speed: 2
-    m_Value: 3.1904519
+    m_Value: 1.6432567
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1149,22 +1150,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animations
+    - Assets/Scripts/Characters
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animations
+  - Assets/Scripts/Characters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\3DRPG\3DRPG\3DPRG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ca5e0000
-    m_LastClickedID: 24266
-    m_ExpandedIDs: 00000000645e0000665e0000685e00006a5e00006c5e00006e5e0000705e0000725e0000765e0000ce5e00000c870000
+    m_SelectedIDs: 22620000
+    m_LastClickedID: 25122
+    m_ExpandedIDs: 00000000ec600000ee600000f0600000f2600000f4600000f6600000f8600000fa600000fc600000fe60000042610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1192,7 +1193,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0520000
     m_LastClickedID: 21168
-    m_ExpandedIDs: 00000000645e0000665e0000685e00006a5e00006c5e00006e5e0000705e0000725e0000745e0000765e0000
+    m_ExpandedIDs: 00000000ec600000ee600000f0600000f2600000f4600000f6600000f8600000fa600000fc600000fe600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1276,9 +1277,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: eaa50000
-      m_LastClickedID: 42474
-      m_ExpandedIDs: d6a2ffff68fbffff6cfbffff6efbffffb6ab0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 16f4ffff6cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
