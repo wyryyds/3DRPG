@@ -697,6 +697,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5959392461975936222, guid: 33717d2ad688f3542b385295af0f6192, type: 3}
   m_PrefabInstance: {fileID: 5628114767331836586}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104952882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104952881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729ce63a8ac5a2c48a6e6cf91af9376f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characteData: {fileID: 11400000, guid: 12417f20010545347ab01b9ab9ff7047, type: 2}
+  attackData: {fileID: 11400000, guid: 1d2b40154e306614296a57298f5a6e0a, type: 2}
+  isCritical: 0
 --- !u!136 &1104952885
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -908,6 +923,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1258796668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258796664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729ce63a8ac5a2c48a6e6cf91af9376f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characteData: {fileID: 11400000, guid: e8c909067744c7048bd07027af0e4c26, type: 2}
+  attackData: {fileID: 11400000, guid: 5a7015a60354e5547bd3070114998d45, type: 2}
+  isCritical: 0
 --- !u!1 &1774307086
 GameObject:
   m_ObjectHideFlags: 0
