@@ -9,15 +9,18 @@ public class PlayerController : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
     private GameObject attackTarget;
+    private CharacterState characterState;
     private float attackTime;
 
     private static readonly int speedString=Animator.StringToHash("Speed");
-    private static readonly int attackSting = Animator.StringToHash("Attack");
+    private static readonly int attackString = Animator.StringToHash("Attack");
+    private static readonly int criticalString = Animator.StringToHash("Critical");
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        characterState = GetComponent<CharacterState>();
     }
 
     private void Start()
@@ -46,6 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         if (targetEnemy == null) return;
         attackTarget = targetEnemy;
+        characterState.isCritical = UnityEngine.Random.value < characterState.attackData.criticalChance;
         StartCoroutine(MoveToAttackTarget());
     }
 
@@ -61,9 +65,15 @@ public class PlayerController : MonoBehaviour
         agent.isStopped = true;
         if(attackTime<0)
         {
-            animator.SetTrigger(attackSting);
-            attackTime = 0.5f;
+            animator.SetBool(criticalString, characterState.isCritical);
+            animator.SetTrigger(attackString);
+            attackTime = characterState.attackData.coolDown;
         }
     }
 
+    void Hit()
+    {
+        var targetStats = attackTarget.GetComponent<CharacterState>();
+        targetStats.TakeDAmage(characterState, targetStats);
+    }
 }

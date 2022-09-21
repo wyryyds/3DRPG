@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,23 +47,26 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.25f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\FlyWeightPattern\SceneObjectGroup.cs" />
     <Compile Include="Assets\FlyWeightPattern\FlyWeightInstanceGeneration.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\ScriptObjects\CharacteData_SO.cs" />
     <Compile Include="Assets\FlyWeightPattern\FlyWeightSceneSaverEditor.cs" />
     <Compile Include="Assets\Scripts\Mgrs\MouseManager.cs" />
+    <Compile Include="Assets\Scripts\ScriptObjects\Attack_SO.cs" />
     <Compile Include="Assets\FlyWeightPattern\FlyWeightSceneSaver.cs" />
     <Compile Include="Assets\FlyWeightPattern\Matrix.cs" />
     <Compile Include="Assets\Scripts\Characters\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\ScriptObjects\CharacteData_SO.cs" />
     <Compile Include="Assets\Scripts\Characters\CharacterState.cs" />
-    <Compile Include="Assets\Scripts\ScriptObjects\Attack_So.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetsStore\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
@@ -297,9 +300,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\unity hub\2020.3.25f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\unity hub\2020.3.25f1c1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>

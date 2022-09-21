@@ -177,4 +177,13 @@ public class EnemyController : MonoBehaviour
         wayPoint = NavMesh.SamplePosition(randomPoint, out hit, patrolRange,1) ? hit.position : transform.position;
 
     }
+
+    void Hit()
+    {
+        if(attackTarget!=null)
+        {
+            var targetStates = attackTarget.GetComponent<CharacterState>();
+            targetStates.TakeDAmage(characterState, targetStates);
+        }
+    }
 }
